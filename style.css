@@ -670,9 +670,12 @@ li span:after {
 }
 
 li span:hover:before {
-    background: var(--black-color);
+    /* background: var(--black-color);
     width: 100%;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); */
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 li span:hover:after {
