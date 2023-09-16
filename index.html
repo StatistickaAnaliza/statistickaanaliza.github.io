@@ -16,6 +16,8 @@
         <meta http-equiv="Pragma" content="no-cache">
         <meta http-equiv="Expires" content="-1">
         <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
     
     
     
@@ -49,6 +51,7 @@
                         <li><span lang="en"><a href="about.html">About</a></span><span lang="hr"><a href="about.html">o nama</a></span></li>
                         <li><span lang="en"><a href="work.html">Projects</a></span><span lang="hr"><a href="work.html">Projekti</a></span></li>
                         <li><span lang="en"><a href="contact.html">Contact</a></span><span lang="hr"><a href="contact.html">Kontakt</a></span></li>
+                        <li><button id="switch-lang"><img id="logo" src="assets/img/croatian-flag-language.png"></button></li>
                     </ul>
                 </div>
 
@@ -108,6 +111,14 @@
     <div class="legal">
         <a href="legal.html">legal</a>
     </div>
+    <script defer="defer">
+        $('[lang="en"]').hide();
+
+        $('#switch-lang').click(function() {
+        $('[lang="en"]').toggle();
+        $('[lang="hr"]').toggle();
+        });
+    </script>
 </body>
 
 </html>
