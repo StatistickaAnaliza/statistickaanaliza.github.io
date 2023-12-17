@@ -290,6 +290,7 @@ li span a:hover {
     left: 0;
     right: 0;
     /* background: black; */
+    z-index: 1100;
 }
 
 .nav-logo {
